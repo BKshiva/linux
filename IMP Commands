@@ -26,4 +26,23 @@ ls *release
  if we want to see the memory used by each folder we can go to that folder and give the command 
  du -sh *
 
+ find [where to search] -name "what-file-to-search"
+
+ eg: 
+ first became root
+
+ find /etc -name "passwd"
+
+ The above command is trying to find passwd file in the /etc folder
+
+ but if we know the file but unable to know exactly where it is then we have to use find command 
+
+ find / -name "passwd" ( It will search entire folders to find the file Passwd )
+
+ find /-maxdepth 1 -name "passwd"  ( it will search for the file up to depth 1 )
+
  
+
+
+
+
