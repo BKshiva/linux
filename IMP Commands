@@ -41,7 +41,51 @@ ls *release
 
  find /-maxdepth 1 -name "passwd"  ( it will search for the file up to depth 1 )
 
- 
+ Example :
+
+ If we define a variable like SIVA=<some Text>
+
+echo $SIVA
+echo $SIVA | cut -d "/" -f1
+
+echo $SIVA | cut -d "/" -f2
+
+echo $SIVA | cut -d "/" -f3
+
+
+.
+.
+.
+
+echo $SIVA | cut -d "/" -fn
+
+means the output of $SIVA is the input to cut -d "/" -f1
+
+means for example if the output of the $SIVA is more words then the cut command is helpful to cut that particular word from that output
+
+means if the out of the $SIVA contains so,e 1000 words and in that 1000 words there is a word called hyderabad
+
+then cut command sepatares that word (Hyderabad)
+
+f1 f2 f3 means of the output there are 1000 words each word is considered as a number means word 1 , word 2 ,, ... word 1000
+
+out of all 1000 words Hyderabad is 900th word then the command is like 
+
+echo $SIVA | cut -d "/" -f900
+
+then this command separates the hyderabad which is 900th word but we dont know where is the word out of all words then cut command
+
+is not useful that is why we use awk word
+
+example :
+
+cat /etc/passwd | awk -F ":" '{Print $1F}'
+
+it separes all words that are usernames in this example
+
+
+
+
 
 
 
