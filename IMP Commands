@@ -18,4 +18,12 @@ ls *release
  df -h
 
  df -hT
+
+ cd /
+
+ du -sh *
+
+ if we want to see the memory used by each folder we can go to that folder and give the command 
+ du -sh *
+
  
