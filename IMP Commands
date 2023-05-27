@@ -1,0 +1,21 @@
+cat /etc
+ if we go in to this folder 
+
+ we have to find release file 
+
+ *release
+ls *release
+
+ cat /etc/*release
+
+ cat /proc/cpuinfo
+ cat /proc/meminfo
+
+ top
+
+ free
+
+ df -h
+
+ df -hT
+ 
